@@ -80,12 +80,21 @@ Structure of Network:--
 OSI Models (7 Layers) -> Standard of two servers or computers communicate with each other on the internet.
 
 Application Layer ->
+This is the layer where user interact with in our devices,it consist of applications like whatsapp,browsers etc.
+
 Presentation Layer ->
 Session Layer ->
 Transport Layer ->
 Network Layer ->
 DataLink Layer ->
 Physical Layer ->
+
+TCP/IP MODEL:--
+*Application Layer
+*Transport Layer
+*Network Layer
+*Datalink Layer 
+*Physical Layer
 
 
 
