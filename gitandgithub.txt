@@ -1,0 +1,83 @@
+Concept -1 :--
+
+=====================================
+        GITHUB / GIT CHEAT SHEET
+=====================================
+
+-------------------------------------
+1. BASIC CONCEPTS
+-------------------------------------
+Repository (repo):    Project folder on GitHub
+Commit:               A saved version of your project
+Branch:               A separate line of development
+Clone:                Copy a remote repo to your computer
+Push / Pull:          Upload / download changes
+
+-------------------------------------
+2. SETUP
+-------------------------------------
+git config --global user.name "Your Name"
+git config --global user.email "you@example.com"
+
+-------------------------------------
+3. STARTING A PROJECT
+-------------------------------------
+git init                         # Create a new local repo
+git clone <url>                  # Clone a remote repo
+
+-------------------------------------
+4. MAKING CHANGES
+-------------------------------------
+git status                       # See changed files
+git add <file>                   # Stage a specific file
+git add .                        # Stage all files
+git commit -m "message"          # Commit with message
+
+-------------------------------------
+5. BRANCHING
+-------------------------------------
+git branch                       # List branches
+git branch <name>                # Create new branch
+git checkout <name>              # Switch branch
+git switch <name>                # (Newer alternative)
+git merge <branch>               # Merge branch into current
+git branch -d <name>             # Delete branch
+
+-------------------------------------
+6. WORKING WITH GITHUB
+-------------------------------------
+git remote add origin <url>      # Connect local repo to GitHub
+git push -u origin main          # Push first commit
+git push                         # Push changes
+git pull                         # Pull latest changes
+git fetch                        # Fetch updates without merging
+
+-------------------------------------
+7. UNDOING CHANGES
+-------------------------------------
+git restore <file>               # Undo changes to a file
+git reset --hard HEAD            # Undo all uncommitted changes
+git revert <commit>              # Undo a specific commit safely
+
+-------------------------------------
+8. CHECKING HISTORY
+-------------------------------------
+git log                          # View commit history
+git log --oneline --graph        # Compact graphical view
+git diff                         # Show unstaged changes
+
+-------------------------------------
+9. .GITIGNORE COMMON ENTRIES
+-------------------------------------
+node_modules/
+.env
+__pycache__/
+.DS_Store
+
+-------------------------------------
+10. EXTRA TIPS
+-------------------------------------
+git stash                        # Temporarily save uncommitted changes
+git stash pop                    # Reapply stashed changes
+git tag <name>                   # Create a tag (like a version)
+git show <commit>                # Show details of a commit

@@ -1,0 +1,73 @@
+Computer Networking Notes
+---------------------------------
+
+What is a Computer:
+COMPUTER → Common Operating Machine Purposely Used for Technological and Educational Research.
+
+What is a Computer Network:
+A Computer Network is a group of interconnected computers that can communicate and share resources like files, printers, and internet connections.
+
+What is the Internet:
+The Internet is a global collection of interconnected computer networks.
+
+First Website (World Wide Web):
+http://info.cern.ch/hypertext/WWW/TheProject.html
+
+Internet Society (ISOC):
+It maintains internet standards, protocols, and governance.
+Website → https://www.internetsociety.org
+
+Client-Server Architecture:
+- The client sends a request (example: typing www.google.com).
+- The server processes the request and sends a response back to the client.
+
+How the Internet is Connected:
+- Internet connections are not in the cloud but through undersea cables connecting continents.
+Check here → https://www.submarinecablemap.com
+
+Protocols (Rules of Communication):
+Protocols are a set of rules defined by the Internet Society for communication between devices.
+
+TCP → Transmission Control Protocol → Ensures reliable data delivery (no corruption or loss).
+UDP → User Datagram Protocol → Fast but does not guarantee delivery.
+HTTP → HyperText Transfer Protocol → Used by web browsers for websites (Port 80).
+HTTPS → HTTP Secure → Secure version of HTTP using encryption (Port 443).
+FTP → File Transfer Protocol → Used to transfer files between computers (Port 21).
+SMTP → Simple Mail Transfer Protocol → Used to send emails (Port 25).
+
+Connectivity of Computers:
+1. Guided Media (Wired Communication)
+   - Data travels through physical media.
+   - Examples: Twisted Pair Cable, Coaxial Cable, Optical Fiber Cable.
+
+2. Unguided Media (Wireless Communication)
+   - Data travels through air.
+   - Examples: Wi-Fi, Bluetooth, 3G/4G/5G.
+
+Types of Networks:
+LAN (Local Area Network) → Small area like office or home.
+MAN (Metropolitan Area Network) → City-level network.
+WAN (Wide Area Network) → Country or global level network.
+
+Technologies used:
+SONET (Synchronous Optical Network) → Allows data to travel long distances.
+Frame Relay → Connects local area networks to wide area networks.
+
+Networking Devices:
+Modem → Converts digital signals to analog and vice versa.
+Router → Routes data packets based on IP address.
+Switch → Connects multiple devices within a LAN and forwards data efficiently.
+Hub → Broadcasts data to all devices (less efficient).
+Access Point → Allows wireless devices to connect to a wired network (Wi-Fi).
+
+Additional Key Points:
+IP Address → Unique number assigned to each device on a network.
+DNS (Domain Name System) → Converts website names into IP addresses.
+MAC Address → Unique hardware address of a network device.
+Bandwidth → Amount of data transmitted per second.
+Latency → Time delay in data transfer between source and destination.
+
+Topologies:--
+* Bus Topology -> Computers are connected in Series with one backbone wire.IF that wire is broken that will spoil the entire network.
+
+
