@@ -1,5 +1,5 @@
-Computer Networking Notes
----------------------------------
+Computer Networking 
+--------------------
 
 What is a Computer:
 COMPUTER → Common Operating Machine Purposely Used for Technological and Educational Research.
@@ -68,6 +68,27 @@ Bandwidth → Amount of data transmitted per second.
 Latency → Time delay in data transfer between source and destination.
 
 Topologies:--
+
 * Bus Topology -> Computers are connected in Series with one backbone wire.IF that wire is broken that will spoil the entire network.
+* Ring Topology -> Computers are connected in ring with one another.unncecessary calls have been made.
+* Star Topology -> One centralized device connected to all computers.Cetraliozation is limitation
+* Tree Topology -> Combo of bus and star.
+* Mesh Topology -> Every single computer is connected to every single computer ,its expensive because wires,scalability issues.
+
+Structure of Network:--
+
+OSI Models (7 Layers) -> Standard of two servers or computers communicate with each other on the internet.
+
+Application Layer ->
+Presentation Layer ->
+Session Layer ->
+Transport Layer ->
+Network Layer ->
+DataLink Layer ->
+Physical Layer ->
+
+
+
+
 
 
