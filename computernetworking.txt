@@ -67,35 +67,189 @@ MAC Address → Unique hardware address of a network device.
 Bandwidth → Amount of data transmitted per second.
 Latency → Time delay in data transfer between source and destination.
 
-Topologies:--
+Topologies:
 
-* Bus Topology -> Computers are connected in Series with one backbone wire.IF that wire is broken that will spoil the entire network.
-* Ring Topology -> Computers are connected in ring with one another.unncecessary calls have been made.
-* Star Topology -> One centralized device connected to all computers.Cetraliozation is limitation
-* Tree Topology -> Combo of bus and star.
-* Mesh Topology -> Every single computer is connected to every single computer ,its expensive because wires,scalability issues.
+Bus Topology:
 
-Structure of Network:--
+Computers are connected in series using one main backbone wire.
+If that wire is broken, the entire network will fail.
 
-OSI Models (7 Layers) -> Standard of two servers or computers communicate with each other on the internet.
+Ring Topology:
 
-Application Layer ->
-This is the layer where user interact with in our devices,it consist of applications like whatsapp,browsers etc.
+Computers are connected in a circular ring form.
+If one system fails, the whole network is affected.
+It can cause unnecessary data circulation.
 
-Presentation Layer ->
-Session Layer ->
-Transport Layer ->
-Network Layer ->
-DataLink Layer ->
-Physical Layer ->
+Star Topology:
 
-TCP/IP MODEL:--
-*Application Layer
-*Transport Layer
-*Network Layer
-*Datalink Layer 
-*Physical Layer
+All computers are connected to one central device like a hub or switch.
+If the central device fails, the whole network stops.
+Easy to manage but centralization is a limitation.
 
+Tree Topology:
+
+It is a combination of bus and star topologies.
+Used in large networks like universities or offices.
+Scalable but complex to maintain.
+
+Mesh Topology:
+
+Every computer is connected to every other computer.
+Very reliable but expensive due to many wires.
+Has scalability issues.
+
+Structure of Network:
+
+OSI Model (7 Layers):
+This model defines how two computers communicate through the network.
+
+Application Layer – Where users interact using apps like browsers, WhatsApp.
+
+Presentation Layer – Converts data formats, handles encryption and compression.
+
+Session Layer – Manages connection sessions between devices.
+
+Transport Layer – Ensures reliable delivery using TCP or UDP.
+
+Network Layer – Handles routing and IP addressing.
+
+Data Link Layer – Works with MAC addresses and data frames.
+
+Physical Layer – Deals with cables, signals, and physical transmission.
+
+Note: A collection of servers is called a Data Center.
+
+TCP/IP Model:
+
+It is a practical model used for internet communication.
+
+Application Layer
+Transport Layer
+Network Layer
+Data Link Layer
+Physical Layer
+
+Protocols:
+
+Web Protocols (TCP/IP based):
+HTTP – HyperText Transfer Protocol
+HTTPS – Secure version of HTTP
+FTP – File Transfer Protocol
+SMTP – Simple Mail Transfer Protocol
+POP3 – Post Office Protocol (for receiving emails)
+DHCP – Dynamic Host Configuration Protocol
+SSH – Secure Shell (remote access)
+VNC – Virtual Network Computing (remote desktop)
+
+Sockets and Ports:
+
+Socket – Interface between processes and the internet.
+Port – Identifies which process or application data should go to.
+Ephemeral Ports – Temporary ports used by clients.
+
+HTTP Methods:
+
+GET – Request data from the server.
+POST – Send data to the server.
+PUT – Update or upload data to a specific location.
+DELETE – Remove data from the server.
+
+Status Codes:
+
+100 Range – Informational responses.
+200 Range – Successful responses (example: 200 OK).
+300 Range – Redirection messages.
+400 Range – Client errors (example: 404 Not Found).
+500 Range – Server errors (example: 500 Internal Server Error).
+
+Cookies:
+
+Cookies are small text files stored in the client’s browser.
+When a user visits a site for the first time, a cookie is stored. 
+Next time the same site is visited, the cookie is sent in the request header.
+This helps the server identify the returning user.
+..
+Mail Protocols:
+
+POP – Post Office Protocol
+IMAP – Internet Message Access Protocol
+
+DNS and ICANN:
+
+DNS – Domain Name System
+ICANN – Internet Corporation for Assigned Names and Numbers
+
+How DNS Works (Example: www.google.com
+):
+
+User types www.google.com in the browser. ->The computer checks local OS cache for the IP address.
+->If not found, it goes to the ISP’s DNS server.
+
+->If the ISP doesn’t have it, the request goes to the Root DNS server.
+
+->The root server directs the query to the Top-Level Domain (like .com).
+
+->The TLD server provides the IP address for google.com.
+
+->The ISP then connects the user to Google’s actual server.
+
+Transport Layer:
+
+The Transport Layer defines where the data should go inside the computer after coming from the Network Layer.
+It uses Multiplexing and Demultiplexing to handle multiple applications.
+
+Multiplexing – Sending different messages from different applications through one communication medium.
+Demultiplexing – Receiving multiple messages and delivering them to the correct applications.
+
+This layer attaches port numbers to packets to identify source and destination applications.
+It also controls congestion (network traffic), which is built into TCP.
+
+Checksums – Used to check if the data is received correctly without errors.
+Timers – Used to detect lost packets; if a timer expires, data is resent.
+
+UDP (User Datagram Protocol):
+
+UDP is a transport layer protocol.
+Data may or may not reach the destination correctly.
+Packets may get lost or come out of order.
+It is a connectionless protocol and uses checksums for error detection.
+
+UDP Packet contains: Source Port Number, Destination Port Number, Length of Datagram, Checksum, Data.
+
+Use Cases: DNS lookups, Video conferencing, Online gaming, Real-time applications where speed is important
+
+TCP (Transmission Control Protocol):
+
+TCP is a reliable, connection-oriented transport protocol.
+It divides data into smaller segments with headers and checksums.
+It maintains order and ensures all data reaches the destination.
+
+Features: Connection oriented, Error control, Congestion control, Full duplex (two-way communication)
+
+3-Way Handshake Process:
+
+* SYN – Client requests a connection
+
+* SYN-ACK – Server acknowledges
+
+* ACK – Client confirms connection
+
+Network Layer:
+
+This layer is responsible for sending data across networks and choosing the best path for data to travel.
+Routers work at this layer.
+
+Routers have two types of tables:
+Routing Table – Contains all available routes.
+Forwarding Table – Contains the best route to send packets.
+
+Control Plane – Builds and updates the routing table.
+
+Types of Routing:
+Static Routing – Manually set routes (time-consuming).
+Dynamic Routing – Automatically updates as network changes. Uses Dijkstra’s Algorithm for best path.
+
+Internet Protocol:--
 
 
 
