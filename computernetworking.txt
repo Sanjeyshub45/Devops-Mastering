@@ -249,7 +249,6 @@ Types of Routing:
 Static Routing – Manually set routes (time-consuming).
 Dynamic Routing – Automatically updates as network changes. Uses Dijkstra’s Algorithm for best path.
 
-Internet Protocol:--
 
 
 

@@ -1,0 +1,48 @@
+Name: "Sanjey"
+
+#(or you can also store above in format like this ):
+{ Name: "Sanjey", Class: "CSE", Age: 56 }
+---
+#lists:
+- one
+- two
+- three
+- four
+---
+# spaces and indentation are more important.
+cities:
+
+ - tiruppur
+ - Chennai
+ - Madurai
+
+---
+ #(or you can also store above in format like this ):
+ cities: [Tiruppur, Chennai, Madurai]
+---
+
+#String Varibales: (Here value can be diffrent,but key name must be unique).
+Nam: Sanjey
+Nae: "Sanjey"
+Nme: 'Sanjey'
+
+#Tetsing
+About: i am sanjey.
+i am stdying CSE.
+
+#(The above thing is wrong yaml take it as separate line so it return error,Thats should be return like below):
+
+About: >
+ i am sanjey.
+ i am stdying CSE.
+
+#(Or)
+
+About: |
+  i am sanjey.
+  i am stdying CSE.
+
+
+...
+#(...) represents document finished.
+
