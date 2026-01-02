@@ -1,48 +1,104 @@
-Name: "Sanjey"
+# ===============================
+# Basic Key-Value
+# ===============================
+name: "Sanjey"
 
-#(or you can also store above in format like this ):
-{ Name: "Sanjey", Class: "CSE", Age: 56 }
+# Inline (JSON-like) object
+person: { name: "Sanjey", class: "CSE", age: 56 }
+
 ---
-#lists:
-- one
-- two
-- three
-- four
+# ===============================
+# Lists
+# ===============================
+items:
+  - one
+  - two
+  - three
+  - four
+
 ---
-# spaces and indentation are more important.
+# Spaces and indentation are important
 cities:
+  - Tiruppur
+  - Chennai
+  - Madurai
 
- - tiruppur
- - Chennai
- - Madurai
+# Inline list
+cities_inline: [Tiruppur, Chennai, Madurai]
 
 ---
- #(or you can also store above in format like this ):
- cities: [Tiruppur, Chennai, Madurai]
+# ===============================
+# String Variables
+# (Key names must be unique)
+# ===============================
+nam: Sanjey
+nae: "Sanjey"
+nme: 'Sanjey'
+
 ---
+# ===============================
+# Multiline Strings
+# ===============================
 
-#String Varibales: (Here value can be diffrent,but key name must be unique).
-Nam: Sanjey
-Nae: "Sanjey"
-Nme: 'Sanjey'
+# ❌ Wrong way (invalid YAML)
+# about: i am sanjey.
+# i am studying CSE.
 
-#Tetsing
-About: i am sanjey.
-i am stdying CSE.
+# ✅ Folded style (newlines become spaces)
+about_folded: >
+  I am Sanjey.
+  I am studying CSE.
 
-#(The above thing is wrong yaml take it as separate line so it return error,Thats should be return like below):
+# ✅ Literal style (newlines preserved)
+about_literal: |
+  I am Sanjey.
+  I am studying CSE.
 
-About: >
- i am sanjey.
- i am stdying CSE.
+---
+# ===============================
+# Numbers
+# ===============================
+number: 99
+floaty: 99.9
 
-#(Or)
+---
+# ===============================
+# Boolean Values
+# ===============================
+isValid: false   # no, n, false, False, FALSE
+isVal: true      # yes, y, true, True, TRUE
 
-About: |
-  i am sanjey.
-  i am stdying CSE.
+---
+# ===============================
+# Explicit Data Types
+# ===============================
 
+# Integers
+num: !!int 0
+positiveNum: !!int 99
+negativeNum: !!int -99
+binaryNum: !!int 0b0101
+octalNum: !!int 0o5474     
+hexaNum: !!int 0x45
+underscoreNum: !!int 5_400_44
+
+# Floats
+floatNum: !!float 99.9
+infiniteNum: !!float .inf
+notNum: !!float .nan
+
+# Booleans
+boolVal: !!bool false
+bolVal: !!bool true
+
+# Strings
+strVal: !!str Sanjey
+
+# Null values
+nullVal: !!null null       # null, NULL, ~
+
+# Null key (valid but not recommended)
+~: This is a null key
 
 ...
-#(...) represents document finished.
-
+# "..." represents the end of the YAML document
